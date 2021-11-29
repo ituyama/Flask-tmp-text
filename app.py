@@ -21,6 +21,8 @@ def mains():
 @app.route('/upload', methods=['GET', 'POST'])
 def yamano():
     forms=request.form["txt"]
+##ここから学習の文を書く
+## forms に文章が格納されてる
 
     return render_template("upload.html",url=forms)
     
